@@ -63,5 +63,11 @@ namespace System.Runtime.InteropServices
         public string EntryPoint;
         public CallingConvention CallingConvention;
         public NativeCallableAttribute() { }
+        
+        [NativeCallable(EntryPoint = "add_dotnet", CallingConvention = CallingConvention.Cdecl)]
+        public static int Add(int a, int b) {
+            return a + b;
+        }
     }
 }
+
