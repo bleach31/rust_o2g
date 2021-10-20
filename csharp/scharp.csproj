@@ -2,11 +2,13 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>net462</TargetFramework>
+    <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
     <NativeLib>Static</NativeLib>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="1.0.5-prerelease-*" />
     <PackageReference Include="Microsoft.Office.Interop.Outlook" Version="15.0.4797.1003" />
   </ItemGroup>
 

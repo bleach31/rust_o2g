@@ -1,7 +1,12 @@
 
 `dotnet run`
 
+dotnet build
 
+dotnet --info
+
+
+dotnet publish /t:LinkNative /p:NativeLib=Static -c Release -r win-x64
 
 
     <OutputType>Library</OutputType>
