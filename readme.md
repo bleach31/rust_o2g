@@ -15,3 +15,6 @@ dotnet publish /t:LinkNative /p:NativeLib=Static -c Release -r win-x64
 
 
 dotnet add package Microsoft.DotNet.ILCompiler.SDK --version 1.0.5-prerelease-00002 --source https://www.myget.org/F/dotnet/api/v3/index.json
+
+文字化け
+chcp65001

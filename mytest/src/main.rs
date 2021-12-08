@@ -6,7 +6,9 @@ extern "C" {
 }
 
 fn main() {
-    println!("Hello, world!");
-    let result = add_dotnet(1, 2);
-    println!("{}", result);
+    unsafe{
+        println!("Hello, world!");
+        let result = add_dotnet(1, 2);
+        println!("{}", result);
+    }
 }
